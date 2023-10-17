@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+header {
+  background-color: rgba(218, 41, 28, 1);
+  padding: 13px 16px;
+}
+
+img {
+  max-width: 100%;
+}
+
+main {
+  padding: 14px 16px;
+  flex: 1;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 41px;
+  padding-bottom: 26px;
+  color: rgba(31, 29, 29, 1);
+}
+
+input {
+  display: block;
+  width: 100%;
+  margin-bottom: 24px;
+  height: 54px;
+  border-radius: 12px;
+  border: 1px solid rgba(0, 0, 0, 1);
+  padding: 19px 16px;
+}
+
+::placeholder {
+  color: rgba(31, 29, 29, 1);
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 16px;
+}
+
+label,
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  display: inline;
+  padding: 0;
+  margin: 0;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  align-items: center;
+}
+
+label {
+  width: 100%;
+  padding-left: 8px;
+  color: rgba(31, 29, 29, 1);
+  display: block;
+  height: 100%;
+}
+
+div {
+  display: flex;
+  height: 100%;
+}
+
+button {
+  display: block;
+  margin: auto;
+  background-color: rgba(218, 41, 28, 1);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 21px;
+  color: rgba(255, 255, 255, 1);
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  border: none;
+  cursor: pointer;
+  margin-top: 24px;
+}
+
+button:focus {
+  background-color: rgb(131, 28, 20);
+  transition: 0.5s;
+}
+
+footer {
+  background-color: rgba(218, 41, 28, 1);
+  width: 100%;
+  margin-top: 48px;
+  height: 200px;
+  text-align: center;
+  padding-bottom: 48px;
+}
+
+footer img {
+  max-width: 100%;
+  margin: auto;
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 16px;
+}
+
+a {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  padding-bottom: 12px;
+}
+
+a:nth-child(2) {
+  padding-right: 16px;
+}
+
+span {
+  color: rgba(255, 255, 255, 1);
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+@media (min-width: 428px) {
+  h1 {
+    text-align: center;
+  }
+
+  body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+
+  main {
+    flex: 1; /* Ao meu entendimento, depois de colocar display: flex, e, definir a direção como coluna, o flex: 1, ficou responsável por garantir que o main ocupe todo o espaço disponível para ele, ou seja, o footer foi empurrado para a parte inferior da tela*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  form {
+    width: 100%;
+    max-width: 600px;
+  }
+
+  button {
+    width: 100%;
+    margin-top: 24px;
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.check-send {
+  max-width: 100%;
+}
+
+.container h1 {
+  color: rgba(31, 29, 29, 1);
+  font-weight: 400;
+  text-align: center;
+  font-size: 24px;
+  line-height: 31px;
+  margin-top: 16px;
+}
